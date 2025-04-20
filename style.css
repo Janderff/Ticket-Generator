@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./assets/background-desktop.png');
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 43.75rem;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 3.4375rem;
+}
+
+main p {
+    font-size: 1.5625rem;
+    color: oklch(87.2% 0.01 258.338);
+}
+
+.form {
+    margin-top: 2.5rem;
+}
+
+.form #pictureInput {
+    display: none;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+
+.picture {
+    width: 25rem;
+    aspect-ratio: 16/9;
+    opacity: 0.6;
+    display: flex;
+
+
+}
