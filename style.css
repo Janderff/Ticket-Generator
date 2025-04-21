@@ -6,45 +6,59 @@
 
 body {
     background-image: url('./assets/background-desktop.png');
+    font-family: 'Inconsolata', sans-serif;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vf;
 }
 
+/*Stling header with logo*/
 header {
-    align-items: center;
-    justify-content: center;
-    display: flex;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+    width: 43.75rem;
 
 }
 
+header figure {
+    display: flex;
+    width: 43.75rem;
+    align-items: center;
+    justify-content: center;
+}
+
+header figure img {
+    width: 200px;
+}
+
+/*Styling main*/
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 43.75rem;
-    border: 1px solid #fff;
     text-align: center;
 }
 
 main h1 {
-    font-size: 3.4375rem;
+    font-size: 3rem;
 }
 
 main p {
-    font-size: 1.5625rem;
+    font-size: 1.125rem;
     color: oklch(87.2% 0.01 258.338);
 }
 
+/*Styling form*/
 .form {
     margin-top: 2.5rem;
 }
 
+/*Styling upload file img*/
 .form #pictureInput {
     display: none;
 }
@@ -63,9 +77,76 @@ img {
 
 .picture {
     width: 25rem;
-    aspect-ratio: 16/9;
-    opacity: 0.6;
+    aspect-ratio: 22/3.4;
     display: flex;
+    border: .125rem dashed #fff;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    transition: color 300ms ease-in-out background 300ms ease-in-out;
+}
+
+.picture:hover {
+    opacity: 0.2;
+    transition: 1s;
+}
 
 
+form p {
+    text-align: left;
+    font-size: .75rem;
+    margin-bottom: .625rem;
+}
+
+form span {
+    margin-bottom: .625rem;
+}
+
+form .text {
+    margin-top: .3125rem;
+    display: flex;
+    flex-direction: row;
+    color: oklch(92% 0.004 286.32);
+}
+
+form .infoIcon {
+    width: .9375rem;
+    height: .9375rem;
+}
+
+form .infoText {
+    font-size: .625rem;
+    margin-left: .3125rem;
+    padding-top: .1875rem;
+
+}
+
+/*Styling input of form*/
+form .inputForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: .625rem;
+    gap: .625rem;
+    align-items: flex-start;
+}
+
+form .inputForm input {
+    width: 25rem;
+    height: 33px;
+    border-radius: .375rem;
+    opacity: 0.2;
+    border: 2px solid;
+    padding-left: .3125rem;
+}
+
+form .inputForm button {
+    width: 25rem;
+    height: 33px;
+    margin-top: .625rem;
+    font-weight: bold;
+    color: oklch(28.2% 0.091 267.935);
+    background-color: #F67464;
+    border-radius: .375rem;
+    margin-bottom: 3.125rem;
 }
