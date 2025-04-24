@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./assets/background-desktop.png');
+    font-family: 'Inconsolata', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vf;
+}
+
+header {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    width: 43.75rem;
+
+}
+
+header figure {
+    display: flex;
+    width: 43.75rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header figure img {
+    width: 200px;
+}
+
+.ticket {
+    margin-top: 4.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket figure .borderTicket {
+    position: relative;
+    z-index: -1;
+}
