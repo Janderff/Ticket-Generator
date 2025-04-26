@@ -34,14 +34,80 @@ header figure img {
     width: 200px;
 }
 
+.content h1 {
+    text-align: center;
+    font-size: 80px;
+}
+
+.content p {
+    font-size: 2.1875rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
 .ticket {
-    margin-top: 4.375rem;
+
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 31.25rem;
+
 }
 
 .ticket figure .borderTicket {
+    display: inline-block;
     position: relative;
-    z-index: -1;
+}
+
+.ticket figure .cardContent {
+    position: absolute;
+    top: 32.8125rem;
+    left: 22.5rem;
+}
+
+.ticket figure .cardContent figure .avatar {
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: .625rem;
+}
+
+.ticket figure .cardContent .footerCard {
+    margin-top: 5.625rem;
+    display: flex;
+}
+
+.ticket figure .cardContent .footerContent {
+    margin-left: .625rem;
+}
+
+.ticket figure .cardContent .footerContent h4 {
+    font-size: 1.875rem;
+}
+
+.ticket figure .cardContent .footerContent .footerText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .625rem;
+}
+
+.ticket figure .cardContent .footerContent .footerText img {
+    width: 30px;
+    height: 1.875rem;
+}
+
+.ticket figure .cardContent .footerContent .footerText span {
+    font-size: 1.125rem;
+}
+
+.ticket .borderTicket .cardContent .logoCard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+}
+
+.ticket .borderTicket .cardContent .logoCard span {
+    margin-left: 4.6875rem;
+    font-size: 22px;
 }
