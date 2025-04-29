@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('./assets/background-desktop.png');
+    background-image: url('../assets/background-desktop.png');
     font-family: 'Inconsolata', sans-serif;
     color: white;
     display: flex;
@@ -51,19 +51,20 @@ header figure img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     height: 31.25rem;
 
 }
 
-.ticket figure .borderTicket {
+.ticket .borderTicket {
     display: inline-block;
     position: relative;
 }
 
 .ticket figure .cardContent {
     position: absolute;
-    top: 32.8125rem;
-    left: 22.5rem;
+    bottom: 1.25rem;
+    left: 1.25rem;
 }
 
 

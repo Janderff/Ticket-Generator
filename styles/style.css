@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('./assets/background-desktop.png');
+    background-image: url('../assets/background-desktop.png');
     font-family: 'Inconsolata', sans-serif;
     color: white;
     display: flex;
